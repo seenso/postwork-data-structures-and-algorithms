@@ -1,5 +1,16 @@
 function findFirstDuplicate(arr) {
   // type your code here
+
+  // find first dupe value that occurs and return that value
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i+1]) {
+      return arr[i]
+    } 
+  }
+
+  return -1;
+
+  // otherwise if arr is empty or next value is undefined, return -1
 }
 
 if (require.main === module) {

@@ -20,4 +20,8 @@ RSpec.describe '#reverse_string' do
   it "can handle many characters" do
     expect(reverse_string('sham-meow')).to eq('sham-meow'.reverse)
   end
+
+  it "can handle multiple words" do
+    expect(reverse_string('seen so')).to eq('seen so'.reverse)
+  end
 end
